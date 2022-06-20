@@ -1,0 +1,39 @@
+//  styles for views component
+
+.mobile {
+  display: block;
+  background-color: white;
+  height: 100%;
+}
+
+.desktop {
+  display: none;
+}
+.desktop-container {
+  padding: 100px;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff9f1;
+}
+.inner-desktop {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.inner-left-div {
+  width: 50%;
+}
+.inner-right-div {
+  width: 50%;
+  text-align: center;
+}
+
+@media (min-width: 967px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}

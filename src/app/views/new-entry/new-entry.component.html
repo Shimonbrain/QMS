@@ -1,0 +1,112 @@
+<section>
+    <!-- navigation -->
+    <div class="fixed top-0 left-0 flex justify-between w-full bg-white py-4 px-3">
+        <p class="text-gray-500 font-medium text-md cursor-pointer" routerLink="/">
+            <i class="fa-solid fa-chevron-left mr-2"></i>NEW ENTRY
+        </p>
+        <div class="cart-navigation cursor-pointer" routerLink="/">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" strokeWidth="{2}">
+                <path strokeLinecap="round" strokeLinejoin="round"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="mt-[3rem] bg-gray-100 p-3 pt-8">
+        <p class="">Enter details of customer</p>
+        <p class="text-gray-400 text-xs mt-2 mb-7">Enter details of waiting customer here</p>
+
+        <div class="flex items-center border border-gray-200 rounded-lg h-10 px-3 bg-white mb-7">
+            <i class="fa fa-user"></i>
+            <input type="text" class="w-full ml-4" placeholder="Name">
+        </div>
+        <div class="flex items-center border border-gray-200 rounded-lg h-10 px-3 bg-white mb-7">
+            <i class="fa fa-phone"></i>
+            <input type="text" class="w-full ml-4" placeholder="Contact Number">
+        </div>
+        <div class="flex items-center border border-gray-200 rounded-lg h-10 px-3 bg-white mb-7">
+            <i class="fa fa-phone"></i>
+            <input type="text" class="w-full ml-4" placeholder="Total Persons(PAX)">
+        </div>
+        <div class="flex items-center border border-gray-200 rounded-lg h-10 px-3 bg-white mb-7 w-fit" 
+        [ngClass]="priority ? 'priorityChecked': '' ">
+            <p class="text-gray-400 mr-5">Priority Customer</p>
+            <label class="label cursor-pointer p-0" >
+                <input type="checkbox"
+                    class="toggle toggle-accent border-2 bg-gray-400 checked:bg-green-600 border-gray-400 checked:border-green-600"
+                    (click)="togglePriority()"/>
+            </label>
+        </div>
+
+        <p class="font-bold text-xs mb-3">Notes</p>
+        <div class="flex items-center border border-gray-200 rounded-lg p-3 bg-white mb-7">
+            <textarea class="bg-transparent h-16 w-full text-black"></textarea>
+        </div>
+
+        <p class="font-bold text-xs mb-3">Expected Waiting Time(mins)</p>
+
+        <div class="grid grid-cols-6 gap-4 mt-3">
+            <div class="flex items-center justify-center">
+            <input class="checkbox-tools1" type="radio" name="tools1" id="A1" checked>
+            <label for="A1" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+              10
+            </label>
+           </div>
+            <div class="flex items-center justify-center">
+                <input class="checkbox-tools1" type="radio" name="tools1" id="A4">
+                <label for="A4" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+                  15
+                </label>
+            </div>
+            <div class="flex items-center justify-center">
+                <input class="checkbox-tools1" type="radio" name="tools1" id="A5">
+                <label for="A5" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+                  20
+                </label>
+            </div>
+            <div class="flex items-center justify-center">
+                <input class="checkbox-tools1" type="radio" name="tools1" id="A7">
+                <label for="A7" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+                  25
+                </label>
+            </div>
+            <div class="flex items-center justify-center">
+                <input class="checkbox-tools1" type="radio" name="tools1" id="A8">
+                <label for="A8" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+                  30
+                </label>
+            </div>
+            <div class="flex items-center justify-center">
+                <input class="checkbox-tools1" type="radio" name="tools1" id="A9">
+                <label for="A9" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+                  40
+                </label>
+            </div>
+            <div class="flex items-center justify-center">
+                <input class="checkbox-tools1" type="radio" name="tools1" id="A10">
+                <label for="A10" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+                  50
+                </label>
+            </div>
+            <div class="flex items-center justify-center">
+                <input class="checkbox-tools1" type="radio" name="tools1" id="A11">
+                <label for="A11" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+                  60
+                </label>
+            </div>
+            <div class="flex items-center justify-center">
+                <input class="checkbox-tools1" type="radio" name="tools1" id="A12">
+                <label for="A12" class="min-w-[fit-content] p-2 px-1 text-center rounded-lg border-2 border-green-600 bg-green-600 ">
+                  60+
+                </label>
+            </div>
+        </div>
+
+        <div class="px-0 mt-10">
+            <button class="rounded-md w-full py-3 text-white bg-[#2f4f4f] text-sm cursor-pointer"> Save </button>
+          </div>
+
+
+    </div>
+</section>
