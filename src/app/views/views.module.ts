@@ -10,6 +10,7 @@ import { FrameComponent } from './shared/frame/frame.component';
 import { ClickOutsideModule } from 'ng-click-outside';
 import { LoaderComponent } from './shared/loader/loader.component';
 import { NewEntryComponent } from './new-entry/new-entry.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -20,6 +21,7 @@ import { NewEntryComponent } from './new-entry/new-entry.component';
     FrameComponent,
     LoaderComponent,
     NewEntryComponent,
+    LoginComponent,
   ],
   imports: [
     CommonModule,

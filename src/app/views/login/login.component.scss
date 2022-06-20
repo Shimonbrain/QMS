@@ -1,0 +1,27 @@
+.top-svg{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    svg{
+        height: 200px;
+        path{
+       stroke: #20bf55;
+       fill: #20bf55;
+
+        }
+    }
+}
+
+.bottom-svg{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    svg{
+        height: 200px;
+        path{
+       stroke: #20bf55;
+       fill: #20bf55;
+
+        }
+    }
+}
