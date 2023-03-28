@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "ciferon-qms",
+    "site": "ciferon-qms-2022",
     "public": "dist/ciferon",
     "ignore": [
       "firebase.json",
